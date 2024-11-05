@@ -1,0 +1,22 @@
+# Ignore virtual environment folder
+.venv/
+
+# Ignore Python cache and other common temp files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore idea folder (PyCharm project settings)
+.idea/
+
+# Allow everything else
+!*.py
+!*.md
+!requirements.txt
+!housing.csv
+!housing_data.db
+!model.joblib
