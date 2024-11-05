@@ -30,7 +30,6 @@ class HousingPipeline:
             logging.info("Loading data from CSV into the database...")
             data = pd.read_csv(self.data_path)
 
-            # Переименование столбцов для удобства обработки
             data.columns = [
                 "longitude", "latitude", "housing_median_age", "total_rooms",
                 "total_bedrooms", "population", "households", "median_income",
