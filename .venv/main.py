@@ -105,11 +105,6 @@ class HousingPipeline:
                 logging.warning("Model does not have 'feature_names_in_' attribute. Using data columns directly.")
                 features = data.drop(columns=['median_house_value'], errors='ignore')
 
-            # Логи размеров и столбцов для диагностики
-            #logging.info(f"Actual data columns: {data.columns.tolist()}")
-            # logging.info(f"Features shape: {features.shape}")
-            # logging.info(f"Features columns: {features.columns.tolist()}")
-
             if features.empty:
                 raise ValueError("No features matched between input data and model expectations.")
 
